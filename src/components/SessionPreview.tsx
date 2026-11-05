@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 
 const photos = [
-  { src: "/images/coach-action.jpg", alt: "המאמן שי פרץ מדגים תרגיל בסטודיו" },
-  { src: "/images/session-group.jpg", alt: "קבוצת ילדים מתאמנים עם משקולות בהדרכת מאמן" },
-  { src: "/images/athlete-2.jpg", alt: "מתאמנת צעירה באימון פונקציונלי" },
-  { src: "/images/up-sign.jpg", alt: "שלט הלוגו של UPGRADE בסטודיו" },
+  { src: asset("/images/coach-action.jpg"), alt: "המאמן שי פרץ מדגים תרגיל בסטודיו" },
+  { src: asset("/images/session-group.jpg"), alt: "קבוצת ילדים מתאמנים עם משקולות בהדרכת מאמן" },
+  { src: asset("/images/athlete-2.jpg"), alt: "מתאמנת צעירה באימון פונקציונלי" },
+  { src: asset("/images/up-sign.jpg"), alt: "שלט הלוגו של UPGRADE בסטודיו" },
 ];
 
 export default function SessionPreview() {

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import { useState } from "react";
 
 export default function Coach() {
@@ -44,7 +45,7 @@ export default function Coach() {
         <div className="flex gap-6 rounded-2xl border border-white/10 bg-panel2 p-6">
           <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border-2 border-lime sm:h-36 sm:w-36">
             <Image
-              src="/images/coach-shai.jpg"
+              src={asset("/images/coach-shai.jpg")}
               alt="שי פרץ, מייסד UPGRADE"
               fill
               className="object-cover"
@@ -67,7 +68,7 @@ export default function Coach() {
           <div className="flex gap-6 rounded-2xl border border-white/10 bg-panel2 p-6">
             <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border-2 border-teal sm:h-36 sm:w-36">
               <Image
-                src="/images/athlete-1.jpg"
+                src={asset("/images/athlete-1.jpg")}
                 alt="הדר, מאמנת ב-UPGRADE"
                 fill
                 className="object-cover"

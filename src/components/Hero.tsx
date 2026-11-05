@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import { waLink, DEFAULT_WA_MESSAGE } from "@/lib/whatsapp";
 
 export default function Hero() {
@@ -41,7 +42,7 @@ export default function Hero() {
         </div>
         <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-white/10 shadow-2xl md:max-w-none">
           <Image
-            src="/images/session-group.jpg"
+            src={asset("/images/session-group.jpg")}
             alt="ילדים מתאמנים בסטודיו UPGRADE ביבנה עם משקולות, בהדרכת מאמן"
             fill
             priority
