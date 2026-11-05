@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #06080a;
+  color: #f4f6f2;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px rgba(198, 255, 30, 0.6);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(198, 255, 30, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(198, 255, 30, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
